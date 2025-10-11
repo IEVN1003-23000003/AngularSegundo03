@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="formulario">
+            <p>x1</p>
+            <label for="">
+                <input type="text" formControlName="x1">
+            </label>
+            <p>y1</p>
+            <label for="">
+                <input type="text" formControlName="y1">
+            </label>
+            <p>x2</p>
+            <label for="">
+                <input type="text" formControlName="x2">
+            </label>
+            <p>y2</p>
+            <label for="">
+                <input type="text" formControlName="y2">
+            </label>
+
+            <br>
+            <button (click)="calcular()" type="submit">Calcular</button>
+            
+
+        </form>
+        <h1>La distancia entre los 2 puntos es: {{resultado}}</h1>
+    </div>
+</div>
+
+<!--
+<div>
+    <h1>Multiplica 2 números</h1>
+    <form [formGroup]="formulario">
+    <div>
+      <label for="">Primer número:</label>
+      <input formControlName="numero1" type="number">
+    </div>
+    
+    <br>
+    
+    <div>
+      <label for="">Segundo número:</label>
+      <input formControlName="numero2" type="number">
+    </div>
+    
+    <br>
+    
+    <button (click)="multNumeros()" type="submit">Multiplicar</button>
+    
+    <h1>Resultado: {{resultado}}</h1>
+  </form>
+</div>
+-->

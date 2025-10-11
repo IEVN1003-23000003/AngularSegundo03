@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <h1>A por B:</h1>
+    </div>
+    <div>
+        <form [formGroup]="formulario">
+            <p>A</p>
+            <input type="text" formControlName="a" placeholder="Valor de a">
+            <p>B</p>
+            <input type="text" formControlName="b" placeholder="Valor de b">
+            
+            <button (click)="calcular()">Calcular Multiplicacion</button>
+        </form>
+    </div>
+    <div>
+        <p>El resultado es: {{total}}</p>
+    </div>
+</div>

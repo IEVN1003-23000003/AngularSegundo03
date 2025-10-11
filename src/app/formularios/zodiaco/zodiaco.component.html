@@ -1,0 +1,66 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 border-end">
+            <h5>Datos Personales</h5>
+            <form [formGroup]="formulario">
+
+                <div class="mb-3">
+                    <p>Nombre:</p>
+                    <input type="text" formControlName="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="mb-3">
+                    <p>A Paterno:</p>
+                    <input type="text" formControlName="apaterno" placeholder="A Paterno">
+                </div>
+
+                <div class="mb-3">
+                    <p>A Materno:</p>
+                    <input type="text" formControlName="amaterno" placeholder="A Materno">
+                </div>
+
+                <p class="mt-4 text-center">Fecha de nacimiento</p>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="form-label">Día</label>
+                        <input type="text" formControlName="dia" placeholder="Día">
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label">Mes</label>
+                        <input type="text" formControlName="mes" placeholder="Mes">
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label">Año</label>
+                        <input type="text" formControlName="anio" placeholder="Año">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <label class="text-center">Sexo:</label>
+                    <div class="form-check">
+                        <input type="radio" formControlName="sexo" value="Masculino">
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" formControlName="sexo" value="Femenino">
+                        <label class="form-check-label" for="femenino">Femenino</label>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-dark px-4" (click)="imprimir()">Imprimir</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+            <p>Hola {{nombcom}}</p>
+            <p>Tienes {{edad}} años</p>
+            <p>Tu signo zodiacal es {{signo}}</p>
+            <div class="text-center mt-4">
+                <img [src]="signoImg" class="img-fluid" style="width:200px; height:200px;">
+            </div>
+        </div>
+    </div>
+</div>
