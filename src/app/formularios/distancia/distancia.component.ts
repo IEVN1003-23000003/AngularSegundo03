@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { distancia } from './distancia';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-distancia',

@@ -9,7 +9,7 @@ export class zodiaco {
     public sexo: string=''
 
   nombrecom(): string{
-    let nombcom = this.nombre + this.amaterno + this.apaterno;
+    let nombcom = this.nombre + this.apaterno + this.amaterno;
     return nombcom
   }
 
