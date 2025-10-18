@@ -11,9 +11,14 @@ export const routes: Routes = [
             import('./auth/features/auth.routes').then((m) => m.default),
     },
     {
-        path: 'distancia',
+        path: 'formularios',
         loadChildren: () =>
             import('./formularios/formularios.routes').then((m) => m.default),
+    },
+    {
+        path: 'utl',
+        loadChildren: () =>
+            import('./utl/utl.routes').then((m) => m.default),
     },
 
 

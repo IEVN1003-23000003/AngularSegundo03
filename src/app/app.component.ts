@@ -8,10 +8,11 @@ import { AporbComponent } from "./formularios/aporb/aporb.component";
 import{initFlowbite} from 'flowbite';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { RouterLink } from '@angular/router';
+import { TempComponent } from "./tem/temp/temp.component";
 
 @Component({
   selector: 'app-root',//los imports van aqui
-  imports: [RouterOutlet,NavbarComponent, FormsModule, ReactiveFormsModule],
+  imports: [RouterOutlet, NavbarComponent, FormsModule, ReactiveFormsModule, TempComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

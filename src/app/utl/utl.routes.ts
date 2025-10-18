@@ -1,5 +1,5 @@
 
-import { Router } from '@angular/router';
+import { Router, Routes } from '@angular/router';
 
 export default[
     {
@@ -8,15 +8,15 @@ export default[
         loadComponent:()=>import('./agregar/agregar.component').then(c=>c.AgregarComponent)
     },
      {
-        path:'alumnos',
+        path:'listaalumnos',
         loadComponent:()=>import('./alumnos/alumnos.component').then(c=>c.AlumnosComponent)
     },
      {
-        path:'editar',
+        path:'editar/:matricula',
         loadComponent:()=>import('./editar/editar.component').then(c=>c.EditarComponent)
     },
     {
-        path:'eliminar',
+        path:'eliminar/:matricula',
         loadComponent:()=>import('./eliminar/eliminar.component').then(c=>c.EliminarComponent)
     },
-]
+]as Routes
